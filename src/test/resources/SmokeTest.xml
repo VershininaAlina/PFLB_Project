@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Diplom SmokeTest" parallel="tests">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+        <listener class-name="utils.AnnotationTransformer"/>
+    </listeners>
+    <test name="Thread#1">
+        <classes>
+            <class name="tests.login.LoginTest"/>
+        </classes>
+    </test>
+    <test name="Thread#2">
+        <classes>
+            <class name="tests.users.AddMoneyTest"/>
+            <class name="tests.users.BuyOrSellCarTest"/>
+        </classes>
+    </test>
+</suite>
+
