@@ -6,7 +6,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import utils.PropertyReader;
-
 import static org.testng.Assert.assertEquals;
 
 public class LoginTest {
